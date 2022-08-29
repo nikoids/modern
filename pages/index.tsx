@@ -46,41 +46,7 @@ const IndexPage = ({ posts }: Props) => {
                     />
                 )}
             </Box>
-            <Divider width="80%" mt="1.6rem" mb=".3rem" mx="auto" />
-            <Heading marginX=".1em" marginTop="1em" fontSize={'1.6em'} color={colors.default} fontWeight="300">
-                Latest News
-            </Heading>
-            <Box d="flex" flexDirection={{ base: 'column', lg: 'row' }}>
-                <Box d="flex" flexDirection="column" flex="4" as="section" marginY={'.7em'}>
-                    {items.length > 4 &&
-                        items.slice(4, 4 + latestPostsLength).map((post) => {
-                            return <PostCard post={post} key={post.id} onClick={() => onClickPost(post.slug)} />;
-                        })}
-                    <Button w="100%" variant="ghost">
-                        Load More
-                    </Button>
-                </Box>
-                <Box flex="2" flexDirection="column" as="section" marginBottom={'10px'} marginX="1rem">
-                    <Box>
-                        <Text color="primary" textAlign="center" marginBottom=".8em" fontWeight="bold">
-                            Most Reading Today
-                        </Text>
-                        {items.slice(12, 15).map((post) => {
-                            return (
-                                <PostCard
-                                    column
-                                    post={post}
-                                    key={post.id}
-                                    titleFontSize={'1em'}
-                                    onClick={() => onClickPost(post.slug)}
-                                />
-                            );
-                        })}
-                    </Box>
-                    <NewsletterForm onSubmitForm={() => {}} marginY="10px" />
-                    <SocialCard title="Follow Us" facebook twitter linkedin youtube instagram onClick={() => {}} />
-                </Box>
-            </Box>
+          
         </Layout>
     );
 };
