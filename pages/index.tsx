@@ -30,7 +30,7 @@ const IndexPage = ({ posts }: Props) => {
     };
 
     return (
-        <Layout title="Home | Modern News" px={{ base: '.6em', md: '1.2em' }} py="1.4em">
+        <Layout title="Main | Modern News" px={{ base: '.6em', md: '1.2em' }} py="1.4em">
             <Box as="section">
                 <Heading marginX=".1em" marginBottom=".6em" fontSize={'1.6em'} color={colors.default} fontWeight="300">
                     Trending
