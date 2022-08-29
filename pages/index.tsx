@@ -8,7 +8,6 @@ import { GetStaticProps } from 'next';
 import { Post } from '../interfaces';
 import useColorTheme from '../hooks/useColorTheme';
 
-const latestPostsLength = 10;
 
 type Props = {
     posts?: Post[];
