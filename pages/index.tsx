@@ -3,7 +3,6 @@ import { Box, Heading } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
 import PhotoCards from '../components/home/PhotoCards';
 import Layout from '../components/Layout';
-import { posts as allPosts } from '../utils/sample-data';
 import { GetStaticProps } from 'next';
 import { Post } from '../interfaces';
 import useColorTheme from '../hooks/useColorTheme';
