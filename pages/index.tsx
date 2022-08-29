@@ -2,7 +2,6 @@ import React from 'react';
 import { Box, Heading } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
 import PhotoCards from '../components/home/PhotoCards';
-import NewsletterForm from '../components/NewsletterForm';
 import Layout from '../components/Layout';
 import { posts as allPosts } from '../utils/sample-data';
 import { GetStaticProps } from 'next';
