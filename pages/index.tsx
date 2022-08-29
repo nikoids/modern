@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Heading, Text } from '@chakra-ui/react';
+import { Box, Heading } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
 import PostCard from '../components/cards/PostCard';
 import PhotoCards from '../components/home/PhotoCards';
